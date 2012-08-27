@@ -1,1 +1,69 @@
-Setting up pages...
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      #deck {
+        font-size: 22px;
+        font-family: sans-serif;
+      }
+      #deck, #hand {
+        position: relative;
+        height: 200px;
+      }
+      #hand .card {
+        position: absolute;
+      }
+      .card {
+        display: inline-block;
+        position: absolute;
+        height : 160px;
+        width: 110px;
+        border: 1px solid #999;
+        border-bottom-width: 2px;
+        -moz-border-bottom-colors: #666 #999;
+        border-right-width: 2px;
+        -moz-border-right-colors: #666 #999;
+        border-radius: 6px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #fff;
+        /*box-shadow: 4px 4px 8px rgb(100,100,100);*/
+      }
+      .card-wrapper {
+        position: relative;
+      }
+      .card .suit {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        font-size: 110px;
+        text-align: center;
+        width: 110px;
+        line-height: 160px;
+        cursor: pointer;
+      }
+      .card .name {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 18px;
+        width: 20px;
+        text-align: center;
+        display: block;
+      }
+    </style>
+    <script data-main="js/app" src="js/lib/require.js"></script>
+  </head>
+  <body>
+    <h1>Deck</h1>
+    <div id="deck"></div>
+    <h1>Hand</h1>
+    <div id="hand"></div>
+    <script type="text/template" id="card-template">
+        <div class="card-wrapper">
+        <span class="suit"><%= get("suit") %></span>
+        <div class="name"><%= get("name") %></div>
+        <div class="name"><%= get("suit") %></div>
+        </div>
+    </script>
+  </body>
+</html>

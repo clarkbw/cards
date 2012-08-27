@@ -1,0 +1,12 @@
+
+js/app.js
+----------------
+js/lib/underscore.js
+js/lib/jquery.js
+js/lib/backbone.js
+js/app/card.js
+js/app/deck.js
+js/app/standard.deck.js
+js/app/hand.js
+js/app/main.js
+js/app.js

@@ -1,0 +1,1 @@
+define(["require","backbone","underscore","app/standard.deck","app/card"],function(require){var Backbone=require("backbone"),_=require("underscore"),StandardDeck=require("app/standard.deck"),Card=require("app/card"),Hand=StandardDeck.extend({model:Card.Model,comparator:function(a,b){return a.get("suit")==b.get("suit")&&a.get("value")>=b.get("value")}});return Hand})
