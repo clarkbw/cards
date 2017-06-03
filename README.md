@@ -23,3 +23,6 @@ http://requirejs.org/docs/optimization.html
 
 For more information on using requirejs:
 http://requirejs.org/docs/api.html
+
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/clarkbw/cards.svg)](https://greenkeeper.io/)
